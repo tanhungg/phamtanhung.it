@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio của Phạm Tấn Hưng - IT Support, Technical Support, Software Engineering." />
+  <meta name="keywords" content="Phạm Tấn Hưng, IT Support, Technical Support, Software Engineering, HUFLIT, FPT Telecom, IDG Vietnam" />
+  <meta name="author" content="Phạm Tấn Hưng" />
+  <meta property="og:title" content="Phạm Tấn Hưng | IT Support Portfolio" />
+  <meta property="og:description" content="IT Support, Technical Support và Software Engineering Portfolio." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/avatar.png" />
+
+  <title>Phạm Tấn Hưng | IT Support Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div id="scrollProgress"></div>
+
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#home">
+        <span class="brand-mark">&lt;/&gt;</span>
+        <span>PhamTanHung.IT</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about"><span data-i18n="nav.about">Giới thiệu</span></a>
+        <a href="#experience"><span data-i18n="nav.experience">Kinh nghiệm</span></a>
+        <a href="#skills"><span data-i18n="nav.skills">Kỹ năng</span></a>
+        <a href="#education"><span data-i18n="nav.education">Học vấn</span></a>
+        <a href="#contact" class="nav-contact"><span data-i18n="nav.contact">Liên hệ</span></a>
+      </nav>
+
+      <div class="nav-actions">
+<button class="language-toggle" id="languageToggle" type="button" aria-label="Switch language">
+          <span class="lang-option active" data-lang-option="vi">VI</span>
+          <span class="lang-divider">/</span>
+          <span class="lang-option" data-lang-option="en">EN</span>
+        </button>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Mở menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="hero-status"><span class="status-dot"></span><strong data-i18n="hero.available">Sẵn sàng cho cơ hội mới</strong></div>
+
+          <h1><span class="hero-intro" data-i18n="hero.intro">Xin chào, Tôi là</span><span class="hero-name">Phạm Tấn Hưng</span></h1>
+
+          <h2 class="stable-hero-role hero-job-line">
+            <span data-i18n="hero.iAm">Tôi là</span>
+            <span class="job-typing-wrap">
+              <span id="jobTypingText"></span><span class="cursor">_</span>
+            </span>
+          </h2>
+
+          <p class="hero-text stable-hero-description">
+            <span data-i18n="hero.description">Tôi có kinh nghiệm hỗ trợ kỹ thuật, xử lý sự cố Internet, Camera, Truyền hình FPT,
+            quản trị website WordPress, xây dựng thư mời điện tử bằng HTML/CSS và phối hợp cùng
+            các team Social, Design, Content trong môi trường doanh nghiệp.</span>
+          </p>
+
+          <div class="hero-actions stable-hero-actions">
+            <a class="btn primary" href="#experience"><span data-i18n="hero.viewExperience">Xem kinh nghiệm</span></a>
+            <a class="btn secondary" href="mailto:tanhung00111@gmail.com"><span data-i18n="hero.sendEmail">Gửi email</span></a>
+          </div>
+
+          <div class="quick-info">
+            <div><span>PHONE</span><a href="tel:0983817521">0983 817 521</a></div>
+            <div><span>EMAIL</span><a href="mailto:tanhung00111@gmail.com">tanhung00111@gmail.com</a></div>
+            <div><span>LOCATION</span><p><span data-i18n="hero.location">Phường Tân Sơn Nhì, HCM</span></p></div>
+            <div>
+    <span>CV</span>
+
+    <a href="#cv-section" class="cv-link">
+
+        <span class="cv-link-icon">
+            📄
+        </span>
+
+        <span class="cv-link-text" data-i18n="hero.viewCv">Xem CV bản cứng</span>
+
+        <span class="cv-link-arrow">
+            ↗
+        </span>
+
+    </a>
+</div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="avatar-frame">
+            <div class="code-corner top-left"></div>
+            <div class="code-corner top-right"></div>
+            <div class="code-corner bottom-left"></div>
+            <div class="code-corner bottom-right"></div>
+            <img src="assets/avatar.png" alt="Phạm Tấn Hưng" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-title reveal stable-section-title">
+          <p>01 // ABOUT</p>
+          <h2><span data-i18n="about.title">Mục tiêu nghề nghiệp</span></h2>
+        </div>
+
+        <div class="about-grid">
+          <article class="panel reveal stable-panel">
+            <div class="panel-head">
+              <span class="panel-icon">01</span>
+              <h3><span data-i18n="about.shortTitle">Mục tiêu ngắn hạn</span></h3>
+            </div>
+            <p>
+              <span data-i18n="about.shortText">Ứng dụng kiến thức và kỹ năng đã tích lũy để đóng góp xử lý công việc,
+              mang lại kết quả cho công ty, không ngừng học hỏi, nâng cao năng lực và
+              phát triển chuyên môn nghiệp vụ.</span>
+            </p>
+          </article>
+
+          <article class="panel reveal stable-panel">
+            <div class="panel-head">
+              <span class="panel-icon">02</span>
+              <h3><span data-i18n="about.longTitle">Mục tiêu dài hạn</span></h3>
+            </div>
+            <p>
+              <span data-i18n="about.longText">Đồng hành lâu dài cùng sự phát triển của công ty, cống hiến tối đa năng lực,
+              xây dựng giá trị bền vững, hoàn thành mục tiêu chung và mang lại giá trị cho tập thể.</span>
+            </p>
+          </article>
+
+          <article class="panel reveal stable-panel">
+            <div class="panel-head">
+              <span class="panel-icon">03</span>
+              <h3><span data-i18n="about.personalTitle">Thông tin cá nhân</span></h3>
+            </div>
+            <ul class="info-list">
+              <li><span><span data-i18n="about.birth">Ngày sinh</span></span><strong>01/11/2002</strong></li>
+              <li><span><span data-i18n="about.address">Địa chỉ</span></span><p><span data-i18n="hero.location">Phường Tân Sơn Nhì, HCM</span></p></li>
+              <li><span><span data-i18n="about.majorLabel">Chuyên ngành</span></span><strong><span data-i18n="about.major">Công nghệ Phần mềm</span></strong></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="experience">
+      <div class="container">
+        <div class="section-title reveal stable-section-title centered-title">
+          <p><span class="section-number">02 //</span> <span data-i18n="experience.eyebrow">CHẶNG ĐƯỜNG PHÁT TRIỂN</span></p>
+          <h2><span data-i18n="experience.title">Kinh nghiệm làm việc</span></h2>
+        </div>
+
+        <div class="vertical-experience">
+          <div class="experience-line"></div>
+
+          <button class="vertical-exp-card left reveal" data-experience="fpt">
+            <span class="vertical-dot"></span>
+            <span class="node-year">03/2025 – 03/2026</span>
+            <strong data-i18n="experience.fptRole">Technical Support FPT Telecom</strong>
+            <span class="node-company">FPT TELECOM</span>
+          </button>
+
+          <button class="vertical-exp-card right reveal" data-experience="idg">
+            <span class="vertical-dot"></span>
+            <span class="node-year">11/2023 – 11/2024</span>
+            <strong data-i18n="experience.idgRole">Nhân viên IT · IT Support</strong>
+            <span class="node-company">IDG VIỆT NAM</span>
+          </button>
+
+          <button class="vertical-exp-card left reveal" data-experience="intern">
+            <span class="vertical-dot"></span>
+            <span class="node-year">07/2023 – 10/2023</span>
+            <strong data-i18n="experience.internRole">Thực tập sinh Nhân viên IT</strong>
+            <span class="node-company">IDG VIỆT NAM</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="experience-modal" id="experienceModal" aria-hidden="true">
+      <div class="experience-modal-backdrop" data-close-modal></div>
+      <div class="experience-modal-panel" role="dialog" aria-modal="true" aria-labelledby="experienceModalTitle">
+        <button class="modal-close" id="modalClose" aria-label="Đóng">×</button>
+        <p class="modal-company" id="experienceModalCompany"></p>
+        <h3 id="experienceModalTitle"></h3>
+        <p class="modal-period" id="experienceModalPeriod"></p>
+        <ul id="experienceModalList"></ul>
+      </div>
+    </div>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-title reveal stable-section-title">
+          <p><span class="section-number">03 //</span> <span data-i18n="skills.eyebrow">Kỹ Năng</span></p>
+          <h2><span data-i18n="skills.title">Kỹ năng chuyên môn</span></h2>
+        </div>
+
+        <div class="skill-explorer reveal">
+          <div class="skill-tabs" role="tablist">
+            <button class="skill-tab" data-skill-tab="soft" data-i18n="skills.soft">Kỹ năng mềm</button>
+            <button class="skill-tab active" data-skill-tab="frontend" data-i18n="skills.frontend">Frontend & Backend</button>
+            <button class="skill-tab" data-skill-tab="support" data-i18n="skills.support">IT Helpdesk / Support</button>
+            <button class="skill-tab" data-skill-tab="office" data-i18n="skills.office">Office & Design</button>
+            
+          </div>
+
+          <div class="skill-content">
+            <div class="skill-panel active" data-skill-panel="frontend">
+              <button><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="">HTML5</button>
+              <button><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="">CSS3</button>
+              <button><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="">VS Code</button>
+              <button><span class="skill-emoji">📱</span>Responsive Design</button>
+              <button><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="">GitHub Pages</button>
+              <button><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="">Java</button>
+              <button><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="">JavaScript</button>
+              <button><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="">MySQL</button>
+              <button><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" alt="">Microsoft SQL Server</button>
+              <button><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" alt="">Flutter</button>
+            </div>
+
+            <div class="skill-panel" data-skill-panel="support">
+              <button><span class="skill-emoji">🛠️</span><span data-i18n="skills.troubleshooting">Xử lý sự cố</span></button>
+              <button><span class="skill-emoji">🌐</span>Internet</button>
+              <button><span class="skill-emoji">📷</span>Camera</button>
+              <button><span class="skill-emoji">📺</span>FPT Television</button>
+              <button><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-plain.svg" alt="">WordPress</button>
+              <button><span class="skill-emoji">✉️</span>VietGuys</button>
+            </div>
+
+            <div class="skill-panel" data-skill-panel="office">
+              <button><img src="https://images.icon-icons.com/1156/PNG/512/1486565573-microsoft-office_81557.png" alt="">Office Microsoft</button>
+              <button><span class="skill-emoji">🎨</span>Canva</button>
+              <button><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" alt="">Photoshop</button>
+              <button><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/illustrator/illustrator-plain.svg" alt="">Adobe Illustrator</button>
+              <button><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="">Figma</button>
+              <button><span class="skill-emoji">🎬</span>CapCut</button>
+            </div>
+
+            <div class="skill-panel" data-skill-panel="soft">
+              <button><span class="skill-emoji">📚</span><span data-i18n="skills.selfLearning">Kỹ năng tự học</span></button>
+              <button><span class="skill-emoji">🤝</span><span data-i18n="skills.teamwork">Kỹ năng làm việc nhóm</span></button>
+              <button><span class="skill-emoji">💬</span><span data-i18n="skills.communication">Kỹ năng giao tiếp</span></button>
+              <button><span class="skill-emoji">⏱️</span><span data-i18n="skills.timeManagement">Quản lý thời gian</span></button>
+              <button><span class="skill-emoji">🧩</span><span data-i18n="skills.problemSolving">Giải quyết vấn đề</span></button>
+              <button><span class="skill-emoji">📋</span><span data-i18n="skills.organization">Tổ chức công việc</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="education">
+      <div class="container">
+        <div class="section-title reveal stable-section-title">
+          <p><span class="section-number">04 //</span> <span data-i18n="education.eyebrow">HỌC VẤN</span></p>
+          <h2><span data-i18n="education.title">Học vấn & Chứng chỉ</span></h2>
+        </div>
+
+        <div class="education-grid">
+          <article class="education-card reveal stable-education-card">
+            <p class="year">2020 — 2024</p>
+            <h3><span data-i18n="education.school">Đại học Ngoại ngữ và Tin học TP.HCM</span></h3>
+            <p class="major"><span data-i18n="education.major">Chuyên ngành Công nghệ Phần mềm</span></p>
+
+            <div class="metrics">
+              <div><strong>7.23</strong><span data-i18n="education.gpaLabel">GPA / 10</span></div>
+              <div><strong>9</strong><span data-i18n="education.projectsLabel">Đồ án</span></div>
+
+            </div>
+
+            <p data-i18n="education.projectsText">
+              Các đồ án gồm Cơ sở dữ liệu, Lập trình Web, Lập trình Mobile, Thiết kế giao diện, Kiểm thử phần mềm và Công nghệ Phần mềm.
+            </p>
+          </article>
+
+          <div class="cert-grid">
+            <article class="cert-card reveal stable-cert-card">
+              <span>2024</span>
+              <h3>TOEIC 535</h3>
+              <p data-i18n="education.toeicIssuer">Cấp bởi IIG Việt Nam</p>
+            </article>
+
+            <article class="cert-card reveal stable-cert-card">
+              <span>2023–2024</span>
+              <h3 data-i18n="education.goodStudentTitle">Sinh viên giỏi</h3>
+              <p data-i18n="education.goodStudentText">Chứng nhận sinh viên giỏi khóa 2023–2024</p>
+            </article>
+
+            <article class="cert-card reveal stable-cert-card">
+              <span>IDG VIETNAM</span>
+              <h3 data-i18n="education.internshipTitle">Chứng nhận thực tập</h3>
+              <p data-i18n="education.internshipText">Chứng nhận thực tập tại IDG Việt Nam</p>
+            </article>
+
+            <article class="cert-card reveal stable-cert-card">
+              <span>IT HUFLIT CLUB</span>
+              <h3 data-i18n="education.clubTitle">Hoạt động câu lạc bộ</h3>
+              <p data-i18n="education.clubText">Tổ chức sự kiện về code và các buổi hội thảo công nghệ.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cv-section" id="cv-section">
+      <div class="container">
+        <div class="section-title reveal stable-section-title centered-title">
+          <p data-i18n="cv.eyebrow">TẢI TÀI LIỆU</p>
+          <h2 data-i18n="cv.title">Xem trực tiếp Hồ sơ PDF</h2>
+        </div>
+
+        <div class="cv-document-layout reveal">
+          <div class="cv-copy">
+            <h3 data-i18n="cv.printQuestion">Bạn muốn lưu giữ bản in?</h3>
+            <p data-i18n="cv.description1">
+              Bên cạnh phiên bản danh thiếp web trực quan, bạn có thể xem bản xem trước trực tiếp của CV bản in định dạng A4 bên phải.
+            </p>
+            <p data-i18n="cv.description2">
+              Hãy nhấn vào nút “Xem toàn màn hình” hoặc “Tải tệp PDF” để nhận tệp CV chính thức và lưu trữ hoặc gửi tới nhà tuyển dụng.
+            </p>
+          </div>
+
+          <div class="cv-pdf-card">
+            <div class="cv-paper">
+              <iframe src="assets/Pham-Tan-Hung-CV.pdf#toolbar=0&navpanes=0&scrollbar=0" title="CV Phạm Tấn Hưng"></iframe>
+            </div>
+
+            <div class="cv-pdf-actions">
+              <a href="assets/Pham-Tan-Hung-CV.pdf" target="_blank" rel="noreferrer" class="cv-primary-btn">
+                <span>↗</span>
+                <span data-i18n="cv.fullscreen">Xem toàn màn hình</span>
+              </a>
+
+              <a href="assets/Pham-Tan-Hung-CV.pdf" download class="cv-secondary-btn">
+                <span>⇩</span>
+                <span data-i18n="cv.downloadFile">Tải tệp PDF</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-wrap reveal stable-contact-wrap">
+        <div>
+          <h2><span data-i18n="contact.title">Sẵn sàng cho cơ hội mới trong lĩnh vực IT Support.</span></h2>
+          <p>
+            <span data-i18n="contact.text">Tôi mong muốn được làm việc trong môi trường chuyên nghiệp,
+            nơi có thể tiếp tục phát triển kỹ năng và đóng góp vào hiệu quả vận hành của doanh nghiệp.</span>
+          </p>
+        </div>
+
+        <div class="contact-links">
+          <a href="tel:0983817521">
+            <span>PHONE</span>
+            <strong>0983 817 521</strong>
+          </a>
+          <a href="mailto:tanhung00111@gmail.com">
+            <span>EMAIL</span>
+            <strong>tanhung00111@gmail.com</strong>
+          </a>
+          <a href="https://maps.google.com/?q=Nguyen+Duy+Duong+Quan+10+Ho+Chi+Minh" target="_blank" rel="noreferrer">
+            <span>LOCATION</span>
+            <strong><p><span data-i18n="hero.location">Phường Tân Sơn Nhì, HCM</span></p></strong>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> Phạm Tấn Hưng</p>
+      <p class="mono">Built with HTML · CSS · JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
