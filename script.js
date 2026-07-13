@@ -259,8 +259,8 @@ function applyLanguage(language) {
 
   document.title =
     language === "vi"
-      ? "Phạm Tấn Hưng | IT Support Portfolio"
-      : "Pham Tan Hung | IT Support Portfolio";
+      ? "Phạm Tấn Hưng - CV & Portfolio"
+      : "Pham Tan Hung - CV & Portfolio";
 }
 
 languageToggle.addEventListener("click", () => {
